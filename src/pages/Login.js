@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { saveEmailAction } from '../redux/actions';
 
 class Login extends React.Component {
   state = {
@@ -10,18 +12,26 @@ class Login extends React.Component {
   validateLogin = () => {
     const { email, senha } = this.state;
     const minLengthSenha = 5;
-    const regexEmail = /\S+@\S+\.\S+/.test(email);
-    /* /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi.test(email); */
+    const regexEmail = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi.test(email);
+
     const stateBolean = regexEmail && senha.length >= minLengthSenha;
-    return stateBolean; // tem que retornar false
+    return !stateBolean; // tem que retornar false
   };
+
+  habiliteBtn = () => (
+    this.setState({ btnDisabled: this.validateLogin() })
+  );
 
   handleChange = ({ target: { name, value } }) => {
-    this.setState({ [name]: value, btnDisabled: this.validateLogin });
+    this.setState({ [name]: value }, () => this.habiliteBtn());
   };
 
-  handleClick = (event) => {
+  handleSubmit = (event) => {
     event.preventDefault();
+    const { dispatch, history } = this.props;
+    const { email } = this.state;
+    dispatch(saveEmailAction(email));
+    history.push('/carteira');
   };
 
   render() {
@@ -29,7 +39,9 @@ class Login extends React.Component {
     return (
       <main>
         <h1>Login</h1>
-        <form>
+        <form
+          onSubmit={ this.handleSubmit }
+        >
           <label htmlFor="email-input">
             Email:
             <input
@@ -52,7 +64,6 @@ class Login extends React.Component {
           </label>
           <button
             type="submit"
-            onClick={ this.handleClick }
             disabled={ btnDisabled }
           >
             Entrar
@@ -63,4 +74,9 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+/* Login.propTypes = {
+  history: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
+  dispatch: PropTypes.func.isRequired,
+}; */
+
+export default connect()(Login);
