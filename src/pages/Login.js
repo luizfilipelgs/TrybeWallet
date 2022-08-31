@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { saveEmailAction } from '../redux/actions';
 
 class Login extends React.Component {
@@ -11,7 +12,7 @@ class Login extends React.Component {
 
   validateLogin = () => {
     const { email, senha } = this.state;
-    const minLengthSenha = 5;
+    const minLengthSenha = 6;
     const regexEmail = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi.test(email);
 
     const stateBolean = regexEmail && senha.length >= minLengthSenha;
