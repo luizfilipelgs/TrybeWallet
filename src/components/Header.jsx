@@ -8,6 +8,11 @@ class Header extends Component {
     return (
       <header>
         <p data-testid="email-field">{`Email: ${email}`}</p>
+        <img
+          src="https://img2.gratispng.com/20180616/abs/kisspng-computer-icons-wallet-icon-design-handbag-savings-5b25a3a97e91a3.6879025515291933855184.jpg"
+          alt="logo carteira"
+          id="img-carteira"
+        />
         <p data-testid="total-field">
           {`Despesa Total: ${0} `}
           <span data-testid="header-currency-field">BRL</span>
