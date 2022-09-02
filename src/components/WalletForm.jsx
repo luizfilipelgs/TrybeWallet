@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { currenciesThunk } from '../redux/actions';
+import { currenciesThunk, ExpenseEditAction } from '../redux/actions';
 
 class WalletForm extends Component {
   state = {
-    id: 0,
     value: '',
     description: '',
     currency: 'USD',
     method: 'Dinheiro',
     tag: 'Alimentação',
-    exchangeRates: {},
   };
 
   componentDidMount() {
@@ -19,8 +17,42 @@ class WalletForm extends Component {
     dispatch(currenciesThunk());
   }
 
+  handleChange = ({ target: { name, value } }) => {
+    this.setState({ [name]: value });
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    const { dispatch, exchangeRates, idGeral, expenses } = this.props;
+    const {
+      value,
+      description,
+      currency,
+      method,
+      tag,
+    } = this.state;
+
+    const despesa = {
+      value,
+      description,
+      currency,
+      method,
+      tag,
+      exchangeRates,
+      id: idGeral };
+
+    console.log(despesa);
+    const arrayAux = [...expenses, despesa];
+    dispatch(ExpenseEditAction({ expenses: arrayAux, idGeral: idGeral + 1 }));
+    dispatch(currenciesThunk());
+
+    this.setState({ value: '', description: '' });
+  };
+
   render() {
     const { currencies } = this.props;
+    const { value, description, currency, method, tag } = this.state;
     const payments = ['Dinheiro', 'Cartão de crédito', 'Cartão de débito'];
     const categories = ['Alimentação', 'Lazer', 'Trabalho', 'Transporte', 'Saúde'];
 
@@ -32,17 +64,21 @@ class WalletForm extends Component {
           Valor:
           <input
             type="number"
-            name="Value"
+            name="value"
+            value={ value }
             id="value-input"
             data-testid="value-input"
+            onChange={ this.handleChange }
           />
         </label>
         <label htmlFor="currency-input">
           Moeda:
           <select
             name="currency"
+            value={ currency }
             id="currency-input"
             data-testid="currency-input"
+            onChange={ this.handleChange }
           >
             {
               currencies && currencies.map((currency) => (
@@ -55,8 +91,10 @@ class WalletForm extends Component {
           Método de Pagamento:
           <select
             name="method"
+            value={ method }
             id="method-input"
             data-testid="method-input"
+            onChange={ this.handleChange }
           >
             {
               payments.map((pay) => (
@@ -68,9 +106,11 @@ class WalletForm extends Component {
         <label htmlFor="tag-input">
           Categoria:
           <select
-            name="Metodo"
+            name="tag"
+            value={ tag }
             id="tag-input"
             data-testid="tag-input"
+            onChange={ this.handleChange }
           >
             {
               categories.map((category) => (
@@ -83,16 +123,18 @@ class WalletForm extends Component {
           Descrição:
           <input
             type="text"
-            name="descrição"
+            name="description"
+            value={ description }
             id="description-input"
             data-testid="description-input"
+            onChange={ this.handleChange }
           />
         </label>
         <button
           type="submit"
           onClick={ this.handleSubmit }
         >
-          Adicionar
+          Adicionar despesa
         </button>
       </form>
     );
@@ -102,12 +144,18 @@ class WalletForm extends Component {
 WalletForm.propTypes = {
   currencies: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   dispatch: PropTypes.func.isRequired,
+  exchangeRates: PropTypes.shape({}).isRequired,
+  idGeral: PropTypes.number.isRequired,
+  expenses: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
 };
 
 const mapStateToProps = (state) => {
   console.log(state);
   return {
     currencies: state.wallet.currencies,
+    idGeral: state.wallet.idGeral,
+    exchangeRates: state.wallet.exchangeRates,
+    expenses: state.wallet.expenses,
   };
 };
 

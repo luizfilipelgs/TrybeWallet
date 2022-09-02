@@ -24,12 +24,24 @@ const responseErroAction = (payload) => ({
   payload,
 });
 
+export const ExpenseEditAction = (payload) => {
+  const valueConvertido = payload.expenses
+    .map((e) => Number(e.value) * Number(e.exchangeRates[e.currency].ask));
+  const total = valueConvertido.reduce((a, b) => (a + b), 0);
+  console.log(payload.expenses[0].value);
+  return {
+    type: RESPONSE_CURRENCIES,
+    payload: { ...payload, total },
+  };
+};
+
 export const currenciesThunk = () => async (dispatch) => {
   dispatch(requestCurrenciesAction());
 
   try {
     const response = await fetchApi();
-    dispatch(responseCurrenciesAction(response));
+    const currencies = Object.keys(response);
+    dispatch(responseCurrenciesAction({ currencies, exchangeRates: response }));
   } catch (error) {
     dispatch(responseErroAction(error));
   }
