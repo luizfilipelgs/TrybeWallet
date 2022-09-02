@@ -49,3 +49,8 @@ header {
   margin: auto;
   position: absolute;
 }
+
+input, select {
+  margin-left: 5px;
+  padding-left: 5px;
+}
