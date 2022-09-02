@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 20px;
+  margin: 20px 25px;
 }
 
 main {
@@ -40,6 +40,8 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
 }
 
 #img-carteira {
@@ -54,3 +56,25 @@ input, select {
   margin-left: 5px;
   padding-left: 5px;
 }
+
+#value-input {
+  width: 120px;
+}
+
+/* TABELA */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/* TABELA */

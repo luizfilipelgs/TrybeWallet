@@ -4,6 +4,16 @@ import { connect } from 'react-redux';
 import { currenciesThunk } from '../redux/actions';
 
 class WalletForm extends Component {
+  state = {
+    id: 0,
+    value: '',
+    description: '',
+    currency: 'USD',
+    method: 'Dinheiro',
+    tag: 'Alimentação',
+    exchangeRates: {},
+  };
+
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch(currenciesThunk());
@@ -22,7 +32,7 @@ class WalletForm extends Component {
           Valor:
           <input
             type="number"
-            name="Valor"
+            name="Value"
             id="value-input"
             data-testid="value-input"
           />
@@ -30,7 +40,7 @@ class WalletForm extends Component {
         <label htmlFor="currency-input">
           Moeda:
           <select
-            name="Moeda"
+            name="currency"
             id="currency-input"
             data-testid="currency-input"
           >
@@ -44,7 +54,7 @@ class WalletForm extends Component {
         <label htmlFor="method-input">
           Método de Pagamento:
           <select
-            name="Metodo"
+            name="method"
             id="method-input"
             data-testid="method-input"
           >
@@ -78,6 +88,12 @@ class WalletForm extends Component {
             data-testid="description-input"
           />
         </label>
+        <button
+          type="submit"
+          onClick={ this.handleSubmit }
+        >
+          Adicionar
+        </button>
       </form>
     );
   }
