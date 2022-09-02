@@ -81,8 +81,8 @@ class WalletForm extends Component {
             onChange={ this.handleChange }
           >
             {
-              currencies && currencies.map((currency) => (
-                <option key={ currency } value={ currency }>{ currency }</option>
+              currencies && currencies.map((currenc) => (
+                <option key={ currenc } value={ currenc }>{ currenc }</option>
               ))
             }
           </select>
