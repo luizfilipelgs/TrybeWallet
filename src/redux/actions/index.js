@@ -28,7 +28,7 @@ export const currenciesThunk = () => async (dispatch) => {
   dispatch(requestCurrenciesAction());
 
   try {
-    const response = await fetchApi();/* Object.keys(payload) */
+    const response = await fetchApi();
     dispatch(responseCurrenciesAction(response));
   } catch (error) {
     dispatch(responseErroAction(error));

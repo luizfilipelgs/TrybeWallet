@@ -35,7 +35,7 @@ class WalletForm extends Component {
             data-testid="currency-input"
           >
             {
-              currencies.map((currency) => (
+              currencies && currencies.map((currency) => (
                 <option key={ currency } value={ currency }>{ currency }</option>
               ))
             }
