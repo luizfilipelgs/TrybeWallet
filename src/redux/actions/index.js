@@ -24,11 +24,11 @@ const responseErroAction = (payload) => ({
   payload,
 });
 
-export const ExpenseEditAction = (payload) => {
+export const ExpenseSumAction = (payload) => {
   const valueConvertido = payload.expenses
     .map((e) => Number(e.value) * Number(e.exchangeRates[e.currency].ask));
   const total = valueConvertido.reduce((a, b) => (a + b), 0);
-  console.log(payload.expenses[0].value);
+  console.log(total);
   return {
     type: RESPONSE_CURRENCIES,
     payload: { ...payload, total },

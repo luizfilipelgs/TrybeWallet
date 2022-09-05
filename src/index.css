@@ -61,6 +61,10 @@ input, select {
   width: 120px;
 }
 
+span {
+  margin: 3px;
+}
+
 /* TABELA */
 table {
   font-family: arial, sans-serif;

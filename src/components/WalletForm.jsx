@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { currenciesThunk, ExpenseEditAction } from '../redux/actions';
+import { currenciesThunk, ExpenseSumAction } from '../redux/actions';
 
 class WalletForm extends Component {
   state = {
@@ -32,6 +32,7 @@ class WalletForm extends Component {
       method,
       tag,
     } = this.state;
+    dispatch(currenciesThunk());
 
     const despesa = {
       value,
@@ -42,10 +43,9 @@ class WalletForm extends Component {
       exchangeRates,
       id: idGeral };
 
-    console.log(despesa);
+    console.log(despesa, 'teste12gffik');
     const arrayAux = [...expenses, despesa];
-    dispatch(ExpenseEditAction({ expenses: arrayAux, idGeral: idGeral + 1 }));
-    dispatch(currenciesThunk());
+    dispatch(ExpenseSumAction({ expenses: arrayAux, idGeral: idGeral + 1 }));
 
     this.setState({ value: '', description: '' });
   };
