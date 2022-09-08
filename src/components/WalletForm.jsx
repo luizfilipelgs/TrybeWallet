@@ -43,7 +43,7 @@ class WalletForm extends Component {
       exchangeRates,
       id: idGeral };
 
-    console.log(despesa, 'teste12gffik');
+    /* console.log(despesa, 'teste12gffik'); */
     const arrayAux = [...expenses, despesa];
     dispatch(ExpenseSumAction({ expenses: arrayAux, idGeral: idGeral + 1 }));
 

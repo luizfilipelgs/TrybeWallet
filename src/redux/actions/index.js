@@ -4,6 +4,7 @@ export const SAVE_EMAIL = 'SAVE_EMAIL';
 export const REQUEST_CURRENCIES = 'REQUEST_CURRENCIES';
 export const RESPONSE_CURRENCIES = 'RESPONSE_CURRENCIES';
 export const RESPONSE_ERRO = 'RESPONSE_ERRO';
+export const DELETE_ITEM = 'DELETE_ITEM';
 
 export const saveEmailAction = (payload) => ({
   type: SAVE_EMAIL,
@@ -24,11 +25,19 @@ const responseErroAction = (payload) => ({
   payload,
 });
 
+export const deleteItemExpAction = (payload) => {
+  console.log('ok');
+  return {
+    type: RESPONSE_CURRENCIES,
+    payload,
+  };
+};
+
 export const ExpenseSumAction = (payload) => {
   const valueConvertido = payload.expenses
     .map((e) => Number(e.value) * Number(e.exchangeRates[e.currency].ask));
   const total = valueConvertido.reduce((a, b) => (a + b), 0);
-  console.log(total);
+  /* console.log(total); */
   return {
     type: RESPONSE_CURRENCIES,
     payload: { ...payload, total },
