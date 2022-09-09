@@ -54,8 +54,8 @@ class Table extends Component {
                 </button>
                 <button
                   type="button"
-                  data-testid="delete-btn"
                   id={ exp.id }
+                  data-testid="delete-btn"
                   onClick={ this.clickDelet }
                 >
                   Deletar
