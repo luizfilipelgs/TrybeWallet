@@ -1,6 +1,6 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+/* import userEvent from '@testing-library/user-event'; */
 import renderWithRouterAndRedux from './helpers/renderWith';
 import Wallet from '../pages/Wallet';
 
@@ -25,13 +25,13 @@ describe('Verifica o funcionamento de <Wallet />', () => {
 
   test('Se existe um input "Descrição" ', () => {
     renderWithRouterAndRedux(<Wallet />);
-    const inputDescription = screen.getByTestId('method-input');
+    const inputDescription = screen.getByTestId('description-input');
     expect(inputDescription).toBeInTheDocument();
   });
 
   test('Se existe um btn "Adcionar despesa" ', () => {
     renderWithRouterAndRedux(<Wallet />);
-    const btn = screen.getByTestId('method-input');
-    expect(btn).toBeInTheDocument();
+    const btnAdd = screen.getByRole('button', 'Adicionar despesa');
+    expect(btnAdd).toBeInTheDocument();
   });
 });
