@@ -141,22 +141,19 @@ class WalletForm extends Component {
   }
 }
 
+const mapStateToProps = (state) => ({
+  currencies: state.wallet.currencies,
+  idGeral: state.wallet.idGeral,
+  exchangeRates: state.wallet.exchangeRates,
+  expenses: state.wallet.expenses,
+});
+
 WalletForm.propTypes = {
   currencies: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   dispatch: PropTypes.func.isRequired,
   exchangeRates: PropTypes.shape({}).isRequired,
   idGeral: PropTypes.number.isRequired,
   expenses: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-};
-
-const mapStateToProps = (state) => {
-  console.log(state);
-  return {
-    currencies: state.wallet.currencies,
-    idGeral: state.wallet.idGeral,
-    exchangeRates: state.wallet.exchangeRates,
-    expenses: state.wallet.expenses,
-  };
 };
 
 export default connect(mapStateToProps)(WalletForm);
