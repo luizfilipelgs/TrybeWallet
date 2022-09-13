@@ -252,6 +252,7 @@ describe('Verifica o funcionamento de <Wallet />', () => {
 
   test('Se existe um btn "Adcionar despesa" ', () => {
     renderWithRouterAndRedux(<Wallet />);
+    // eslint-disable-next-line sonarjs/no-duplicate-string
     const btnAdd = screen.getByRole('button', 'Adicionar despesa');
     expect(btnAdd).toBeInTheDocument();
   });
