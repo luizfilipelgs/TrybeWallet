@@ -8,11 +8,11 @@ class Header extends Component {
     return (
       <header>
         <p data-testid="email-field">{ email }</p>
-        <img
+        {/* <img
           src="https://img2.gratispng.com/20180616/abs/kisspng-computer-icons-wallet-icon-design-handbag-savings-5b25a3a97e91a3.6879025515291933855184.jpg"
           alt="logo carteira"
           id="img-carteira"
-        />
+        /> */}
         <div>
           <span data-testid="total-field">
             { total.toFixed(2) }
