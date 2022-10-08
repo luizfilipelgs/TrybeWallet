@@ -1,5 +1,6 @@
 /* eslint-disable sonarjs/no-duplicate-string */
-
+const dolarReal = 'Dólar Americano/Real Brasileiro';
+const data1 = '2022-10-07 17:59:56';
 const mockData2 = {
   user: {
     email: 'teste@test.com',
@@ -33,7 +34,7 @@ const mockData2 = {
           USD: {
             code: 'USD',
             codein: 'BRL',
-            name: 'Dólar Americano/Real Brasileiro',
+            name: dolarReal,
             high: '5.2523',
             low: '5.1957',
             varBid: '-0.0194',
@@ -41,7 +42,7 @@ const mockData2 = {
             bid: '5.201',
             ask: '5.2035',
             timestamp: '1665176396',
-            create_date: '2022-10-07 17:59:56',
+            create_date: data1,
           },
           CAD: {
             code: 'CAD',
@@ -54,7 +55,7 @@ const mockData2 = {
             bid: '3.7868',
             ask: '3.7899',
             timestamp: '1665176393',
-            create_date: '2022-10-07 17:59:53',
+            create_date: data1,
           },
           GBP: {
             code: 'GBP',
@@ -67,7 +68,7 @@ const mockData2 = {
             bid: '5.7663',
             ask: '5.7712',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54',
+            create_date: data1,
           },
           ARS: {
             code: 'ARS',
@@ -80,7 +81,7 @@ const mockData2 = {
             bid: '0.0349',
             ask: '0.0349',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54',
+            create_date: data1,
           },
           BTC: {
             code: 'BTC',
@@ -145,7 +146,7 @@ const mockData2 = {
             bid: '5.2292',
             ask: '5.234',
             timestamp: '1665176393',
-            create_date: '2022-10-07 17:59:53',
+            create_date: data1,
           },
           AUD: {
             code: 'AUD',
@@ -158,7 +159,7 @@ const mockData2 = {
             bid: '3.3125',
             ask: '3.3151',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54',
+            create_date: data1,
           },
           CNY: {
             code: 'CNY',
@@ -171,7 +172,7 @@ const mockData2 = {
             bid: '0.7314',
             ask: '0.7315',
             timestamp: '1665176344',
-            create_date: '2022-10-07 17:59:04',
+            create_date: data1,
           },
           ILS: {
             code: 'ILS',
@@ -238,7 +239,7 @@ const mockData2 = {
           USD: {
             code: 'USD',
             codein: 'BRL',
-            name: 'Dólar Americano/Real Brasileiro',
+            name: dolarReal,
             high: '5.2523',
             low: '5.1957',
             varBid: '-0.0194',
@@ -246,7 +247,7 @@ const mockData2 = {
             bid: '5.201',
             ask: '5.2035',
             timestamp: '1665176396',
-            create_date: '2022-10-07 17:59:56',
+            create_date: data1,
           },
           CAD: {
             code: 'CAD',
@@ -259,7 +260,7 @@ const mockData2 = {
             bid: '3.7868',
             ask: '3.7899',
             timestamp: '1665176393',
-            create_date: '2022-10-07 17:59:53',
+            create_date: data1,
           },
           GBP: {
             code: 'GBP',
@@ -272,7 +273,7 @@ const mockData2 = {
             bid: '5.7663',
             ask: '5.7712',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54',
+            create_date: data1,
           },
           ARS: {
             code: 'ARS',
@@ -285,7 +286,7 @@ const mockData2 = {
             bid: '0.0349',
             ask: '0.0349',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54',
+            create_date: data1,
           },
           BTC: {
             code: 'BTC',
@@ -350,7 +351,7 @@ const mockData2 = {
             bid: '5.2292',
             ask: '5.234',
             timestamp: '1665176393',
-            create_date: '2022-10-07 17:59:53',
+            create_date: data1,
           },
           AUD: {
             code: 'AUD',
@@ -363,7 +364,7 @@ const mockData2 = {
             bid: '3.3125',
             ask: '3.3151',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54',
+            create_date: data1,
           },
           CNY: {
             code: 'CNY',
@@ -376,7 +377,7 @@ const mockData2 = {
             bid: '0.7314',
             ask: '0.7315',
             timestamp: '1665176344',
-            create_date: '2022-10-07 17:59:04',
+            create_date: data1,
           },
           ILS: {
             code: 'ILS',
@@ -442,7 +443,7 @@ const mockData2 = {
       USD: {
         code: 'USD',
         codein: 'BRL',
-        name: 'Dólar Americano/Real Brasileiro',
+        name: dolarReal,
         high: '5.2523',
         low: '5.1957',
         varBid: '-0.0194',
@@ -450,7 +451,7 @@ const mockData2 = {
         bid: '5.201',
         ask: '5.2035',
         timestamp: '1665176396',
-        create_date: '2022-10-07 17:59:56',
+        create_date: data1,
       },
       CAD: {
         code: 'CAD',
@@ -463,7 +464,7 @@ const mockData2 = {
         bid: '3.7868',
         ask: '3.7899',
         timestamp: '1665176393',
-        create_date: '2022-10-07 17:59:53',
+        create_date: data1,
       },
       GBP: {
         code: 'GBP',
@@ -476,7 +477,7 @@ const mockData2 = {
         bid: '5.7663',
         ask: '5.7712',
         timestamp: '1665176394',
-        create_date: '2022-10-07 17:59:54',
+        create_date: data1,
       },
       ARS: {
         code: 'ARS',
@@ -489,7 +490,7 @@ const mockData2 = {
         bid: '0.0349',
         ask: '0.0349',
         timestamp: '1665176394',
-        create_date: '2022-10-07 17:59:54',
+        create_date: data1,
       },
       BTC: {
         code: 'BTC',
@@ -554,7 +555,7 @@ const mockData2 = {
         bid: '5.2292',
         ask: '5.234',
         timestamp: '1665176393',
-        create_date: '2022-10-07 17:59:53',
+        create_date: data1,
       },
       AUD: {
         code: 'AUD',
@@ -567,7 +568,7 @@ const mockData2 = {
         bid: '3.3125',
         ask: '3.3151',
         timestamp: '1665176394',
-        create_date: '2022-10-07 17:59:54',
+        create_date: data1,
       },
       CNY: {
         code: 'CNY',
@@ -580,7 +581,7 @@ const mockData2 = {
         bid: '0.7314',
         ask: '0.7315',
         timestamp: '1665176344',
-        create_date: '2022-10-07 17:59:04',
+        create_date: data1,
       },
       ILS: {
         code: 'ILS',
