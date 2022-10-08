@@ -21,9 +21,7 @@ class WalletForm extends Component {
     this.setState({ [name]: value });
   };
 
-  handleSubmit = (event) => {
-    event.preventDefault();
-
+  handleSubmit = () => {
     const { dispatch, exchangeRates, idGeral, expenses } = this.props;
     const {
       value,
@@ -43,7 +41,6 @@ class WalletForm extends Component {
       exchangeRates,
       id: idGeral };
 
-    /* console.log(despesa, 'teste12gffik'); */
     const arrayAux = [...expenses, despesa];
     dispatch(ExpenseSumAction({ expenses: arrayAux, idGeral: idGeral + 1 }));
 
@@ -131,7 +128,7 @@ class WalletForm extends Component {
           />
         </label>
         <button
-          type="submit"
+          type="button"
           onClick={ this.handleSubmit }
         >
           Adicionar despesa
