@@ -2,7 +2,7 @@
 
 const mockData2 = {
   user: {
-    email: 'teste@test.com'
+    email: 'teste@test.com',
   },
   wallet: {
     currencies: [
@@ -20,7 +20,7 @@ const mockData2 = {
       'ILS',
       'ETH',
       'XRP',
-      'DOGE'
+      'DOGE',
     ],
     expenses: [
       {
@@ -41,7 +41,7 @@ const mockData2 = {
             bid: '5.201',
             ask: '5.2035',
             timestamp: '1665176396',
-            create_date: '2022-10-07 17:59:56'
+            create_date: '2022-10-07 17:59:56',
           },
           CAD: {
             code: 'CAD',
@@ -54,7 +54,7 @@ const mockData2 = {
             bid: '3.7868',
             ask: '3.7899',
             timestamp: '1665176393',
-            create_date: '2022-10-07 17:59:53'
+            create_date: '2022-10-07 17:59:53',
           },
           GBP: {
             code: 'GBP',
@@ -67,7 +67,7 @@ const mockData2 = {
             bid: '5.7663',
             ask: '5.7712',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54'
+            create_date: '2022-10-07 17:59:54',
           },
           ARS: {
             code: 'ARS',
@@ -80,7 +80,7 @@ const mockData2 = {
             bid: '0.0349',
             ask: '0.0349',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54'
+            create_date: '2022-10-07 17:59:54',
           },
           BTC: {
             code: 'BTC',
@@ -93,7 +93,7 @@ const mockData2 = {
             bid: '101.822',
             ask: '101.849',
             timestamp: '1665264325',
-            create_date: '2022-10-08 18:25:25'
+            create_date: '2022-10-08 18:25:25',
           },
           LTC: {
             code: 'LTC',
@@ -106,7 +106,7 @@ const mockData2 = {
             bid: '277.09',
             ask: '278.58',
             timestamp: '1665264326',
-            create_date: '2022-10-08 18:25:26'
+            create_date: '2022-10-08 18:25:26',
           },
           EUR: {
             code: 'EUR',
@@ -119,7 +119,7 @@ const mockData2 = {
             bid: '5.0694',
             ask: '5.073',
             timestamp: '1665176395',
-            create_date: '2022-10-07 17:59:55'
+            create_date: '2022-10-07 17:59:55',
           },
           JPY: {
             code: 'JPY',
@@ -132,7 +132,7 @@ const mockData2 = {
             bid: '0.03579',
             ask: '0.03581',
             timestamp: '1665176386',
-            create_date: '2022-10-07 17:59:46'
+            create_date: '2022-10-07 17:59:46',
           },
           CHF: {
             code: 'CHF',
@@ -145,7 +145,7 @@ const mockData2 = {
             bid: '5.2292',
             ask: '5.234',
             timestamp: '1665176393',
-            create_date: '2022-10-07 17:59:53'
+            create_date: '2022-10-07 17:59:53',
           },
           AUD: {
             code: 'AUD',
@@ -158,7 +158,7 @@ const mockData2 = {
             bid: '3.3125',
             ask: '3.3151',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54'
+            create_date: '2022-10-07 17:59:54',
           },
           CNY: {
             code: 'CNY',
@@ -171,7 +171,7 @@ const mockData2 = {
             bid: '0.7314',
             ask: '0.7315',
             timestamp: '1665176344',
-            create_date: '2022-10-07 17:59:04'
+            create_date: '2022-10-07 17:59:04',
           },
           ILS: {
             code: 'ILS',
@@ -184,7 +184,7 @@ const mockData2 = {
             bid: '1.4675',
             ask: '1.4678',
             timestamp: '1665176346',
-            create_date: '2022-10-07 17:59:06'
+            create_date: '2022-10-07 17:59:06',
           },
           ETH: {
             code: 'ETH',
@@ -197,7 +197,7 @@ const mockData2 = {
             bid: '6.93212',
             ask: '6.93804',
             timestamp: '1665264324',
-            create_date: '2022-10-08 18:25:24'
+            create_date: '2022-10-08 18:25:24',
           },
           XRP: {
             code: 'XRP',
@@ -210,7 +210,7 @@ const mockData2 = {
             bid: '2.72',
             ask: '2.72',
             timestamp: '1665264232',
-            create_date: '2022-10-08 18:23:52'
+            create_date: '2022-10-08 18:23:52',
           },
           DOGE: {
             code: 'DOGE',
@@ -223,10 +223,10 @@ const mockData2 = {
             bid: '0.323241',
             ask: '0.323241',
             timestamp: '1665264233',
-            create_date: '2022-10-08 18:23:53'
-          }
+            create_date: '2022-10-08 18:23:53',
+          },
         },
-        id: 2
+        id: 2,
       },
       {
         value: '5',
@@ -246,7 +246,7 @@ const mockData2 = {
             bid: '5.201',
             ask: '5.2035',
             timestamp: '1665176396',
-            create_date: '2022-10-07 17:59:56'
+            create_date: '2022-10-07 17:59:56',
           },
           CAD: {
             code: 'CAD',
@@ -259,7 +259,7 @@ const mockData2 = {
             bid: '3.7868',
             ask: '3.7899',
             timestamp: '1665176393',
-            create_date: '2022-10-07 17:59:53'
+            create_date: '2022-10-07 17:59:53',
           },
           GBP: {
             code: 'GBP',
@@ -272,7 +272,7 @@ const mockData2 = {
             bid: '5.7663',
             ask: '5.7712',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54'
+            create_date: '2022-10-07 17:59:54',
           },
           ARS: {
             code: 'ARS',
@@ -285,7 +285,7 @@ const mockData2 = {
             bid: '0.0349',
             ask: '0.0349',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54'
+            create_date: '2022-10-07 17:59:54',
           },
           BTC: {
             code: 'BTC',
@@ -298,7 +298,7 @@ const mockData2 = {
             bid: '101.822',
             ask: '101.849',
             timestamp: '1665264325',
-            create_date: '2022-10-08 18:25:25'
+            create_date: '2022-10-08 18:25:25',
           },
           LTC: {
             code: 'LTC',
@@ -311,7 +311,7 @@ const mockData2 = {
             bid: '277.09',
             ask: '278.58',
             timestamp: '1665264326',
-            create_date: '2022-10-08 18:25:26'
+            create_date: '2022-10-08 18:25:26',
           },
           EUR: {
             code: 'EUR',
@@ -324,7 +324,7 @@ const mockData2 = {
             bid: '5.0694',
             ask: '5.073',
             timestamp: '1665176395',
-            create_date: '2022-10-07 17:59:55'
+            create_date: '2022-10-07 17:59:55',
           },
           JPY: {
             code: 'JPY',
@@ -337,7 +337,7 @@ const mockData2 = {
             bid: '0.03579',
             ask: '0.03581',
             timestamp: '1665176386',
-            create_date: '2022-10-07 17:59:46'
+            create_date: '2022-10-07 17:59:46',
           },
           CHF: {
             code: 'CHF',
@@ -350,7 +350,7 @@ const mockData2 = {
             bid: '5.2292',
             ask: '5.234',
             timestamp: '1665176393',
-            create_date: '2022-10-07 17:59:53'
+            create_date: '2022-10-07 17:59:53',
           },
           AUD: {
             code: 'AUD',
@@ -363,7 +363,7 @@ const mockData2 = {
             bid: '3.3125',
             ask: '3.3151',
             timestamp: '1665176394',
-            create_date: '2022-10-07 17:59:54'
+            create_date: '2022-10-07 17:59:54',
           },
           CNY: {
             code: 'CNY',
@@ -376,7 +376,7 @@ const mockData2 = {
             bid: '0.7314',
             ask: '0.7315',
             timestamp: '1665176344',
-            create_date: '2022-10-07 17:59:04'
+            create_date: '2022-10-07 17:59:04',
           },
           ILS: {
             code: 'ILS',
@@ -389,7 +389,7 @@ const mockData2 = {
             bid: '1.4675',
             ask: '1.4678',
             timestamp: '1665176346',
-            create_date: '2022-10-07 17:59:06'
+            create_date: '2022-10-07 17:59:06',
           },
           ETH: {
             code: 'ETH',
@@ -402,7 +402,7 @@ const mockData2 = {
             bid: '6.93212',
             ask: '6.93804',
             timestamp: '1665264324',
-            create_date: '2022-10-08 18:25:24'
+            create_date: '2022-10-08 18:25:24',
           },
           XRP: {
             code: 'XRP',
@@ -415,7 +415,7 @@ const mockData2 = {
             bid: '2.72',
             ask: '2.72',
             timestamp: '1665264232',
-            create_date: '2022-10-08 18:23:52'
+            create_date: '2022-10-08 18:23:52',
           },
           DOGE: {
             code: 'DOGE',
@@ -428,11 +428,11 @@ const mockData2 = {
             bid: '0.323241',
             ask: '0.323241',
             timestamp: '1665264233',
-            create_date: '2022-10-08 18:23:53'
-          }
+            create_date: '2022-10-08 18:23:53',
+          },
         },
-        id: 3
-      }
+        id: 3,
+      },
     ],
     editor: false,
     idToEdit: 0,
@@ -450,7 +450,7 @@ const mockData2 = {
         bid: '5.201',
         ask: '5.2035',
         timestamp: '1665176396',
-        create_date: '2022-10-07 17:59:56'
+        create_date: '2022-10-07 17:59:56',
       },
       CAD: {
         code: 'CAD',
@@ -463,7 +463,7 @@ const mockData2 = {
         bid: '3.7868',
         ask: '3.7899',
         timestamp: '1665176393',
-        create_date: '2022-10-07 17:59:53'
+        create_date: '2022-10-07 17:59:53',
       },
       GBP: {
         code: 'GBP',
@@ -476,7 +476,7 @@ const mockData2 = {
         bid: '5.7663',
         ask: '5.7712',
         timestamp: '1665176394',
-        create_date: '2022-10-07 17:59:54'
+        create_date: '2022-10-07 17:59:54',
       },
       ARS: {
         code: 'ARS',
@@ -489,7 +489,7 @@ const mockData2 = {
         bid: '0.0349',
         ask: '0.0349',
         timestamp: '1665176394',
-        create_date: '2022-10-07 17:59:54'
+        create_date: '2022-10-07 17:59:54',
       },
       BTC: {
         code: 'BTC',
@@ -502,7 +502,7 @@ const mockData2 = {
         bid: '101.8',
         ask: '101.8',
         timestamp: '1665264934',
-        create_date: '2022-10-08 18:35:34'
+        create_date: '2022-10-08 18:35:34',
       },
       LTC: {
         code: 'LTC',
@@ -515,7 +515,7 @@ const mockData2 = {
         bid: '278.17',
         ask: '278.85',
         timestamp: '1665265047',
-        create_date: '2022-10-08 18:37:27'
+        create_date: '2022-10-08 18:37:27',
       },
       EUR: {
         code: 'EUR',
@@ -528,7 +528,7 @@ const mockData2 = {
         bid: '5.0694',
         ask: '5.073',
         timestamp: '1665176395',
-        create_date: '2022-10-07 17:59:55'
+        create_date: '2022-10-07 17:59:55',
       },
       JPY: {
         code: 'JPY',
@@ -541,7 +541,7 @@ const mockData2 = {
         bid: '0.03579',
         ask: '0.03581',
         timestamp: '1665176386',
-        create_date: '2022-10-07 17:59:46'
+        create_date: '2022-10-07 17:59:46',
       },
       CHF: {
         code: 'CHF',
@@ -554,7 +554,7 @@ const mockData2 = {
         bid: '5.2292',
         ask: '5.234',
         timestamp: '1665176393',
-        create_date: '2022-10-07 17:59:53'
+        create_date: '2022-10-07 17:59:53',
       },
       AUD: {
         code: 'AUD',
@@ -567,7 +567,7 @@ const mockData2 = {
         bid: '3.3125',
         ask: '3.3151',
         timestamp: '1665176394',
-        create_date: '2022-10-07 17:59:54'
+        create_date: '2022-10-07 17:59:54',
       },
       CNY: {
         code: 'CNY',
@@ -580,7 +580,7 @@ const mockData2 = {
         bid: '0.7314',
         ask: '0.7315',
         timestamp: '1665176344',
-        create_date: '2022-10-07 17:59:04'
+        create_date: '2022-10-07 17:59:04',
       },
       ILS: {
         code: 'ILS',
@@ -593,7 +593,7 @@ const mockData2 = {
         bid: '1.4675',
         ask: '1.4678',
         timestamp: '1665176346',
-        create_date: '2022-10-07 17:59:06'
+        create_date: '2022-10-07 17:59:06',
       },
       ETH: {
         code: 'ETH',
@@ -606,7 +606,7 @@ const mockData2 = {
         bid: '6.93211',
         ask: '6.93211',
         timestamp: '1665265031',
-        create_date: '2022-10-08 18:37:11'
+        create_date: '2022-10-08 18:37:11',
       },
       XRP: {
         code: 'XRP',
@@ -619,7 +619,7 @@ const mockData2 = {
         bid: '2.72',
         ask: '2.72',
         timestamp: '1665264892',
-        create_date: '2022-10-08 18:34:52'
+        create_date: '2022-10-08 18:34:52',
       },
       DOGE: {
         code: 'DOGE',
@@ -632,10 +632,10 @@ const mockData2 = {
         bid: '0.320604',
         ask: '0.320604',
         timestamp: '1665265921',
-        create_date: '2022-10-08 18:52:01'
-      }
-    }
-  }
-}
+        create_date: '2022-10-08 18:52:01',
+      },
+    },
+  },
+};
 
 export default mockData2;
