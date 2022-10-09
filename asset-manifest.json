@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/TrybeWallet/static/css/main.5c62202b.css",
+    "main.js": "/TrybeWallet/static/js/main.a879c3e8.js",
+    "static/media/foto fundo.svg": "/TrybeWallet/static/media/foto fundo.2f785ffe979b70ecf4c5.svg",
+    "static/media/moedas.svg": "/TrybeWallet/static/media/moedas.eb82f127a22f9151a4344686888471be.svg",
+    "static/media/profile.svg": "/TrybeWallet/static/media/profile.4bf571501cbca74b9bd60d2b65f84f67.svg",
+    "index.html": "/TrybeWallet/index.html",
+    "main.5c62202b.css.map": "/TrybeWallet/static/css/main.5c62202b.css.map",
+    "main.a879c3e8.js.map": "/TrybeWallet/static/js/main.a879c3e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c62202b.css",
+    "static/js/main.a879c3e8.js"
+  ]
+}
