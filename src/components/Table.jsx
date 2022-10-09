@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { deleteItemExpAction, ExpenseSumAction } from '../redux/actions';
+import '../style/Table.css';
 
 class Table extends Component {
   clickDelet = (event) => {
@@ -35,7 +36,7 @@ class Table extends Component {
               <td>{exp.tag}</td>
               <td>{exp.method}</td>
               <td>{parseFloat(exp.value).toFixed(2)}</td>
-              <td>{exp.exchangeRates[exp.currency].name}</td>
+              <td>{exp.currency}</td>
               <td>{parseFloat(exp.exchangeRates[exp.currency].ask).toFixed(2)}</td>
               <td>
                 {parseFloat(
@@ -47,6 +48,7 @@ class Table extends Component {
               <td>
                 <button
                   type="button"
+                  className="button is-warning is-small"
                   data-testid="edit-btn"
                   id={ exp.id }
                 >
@@ -54,6 +56,7 @@ class Table extends Component {
                 </button>
                 <button
                   type="button"
+                  className="button is-danger is-small"
                   id={ exp.id }
                   data-testid="delete-btn"
                   onClick={ this.clickDelet }

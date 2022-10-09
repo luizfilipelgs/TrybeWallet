@@ -1,0 +1,26 @@
+.all-wallet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  width: 100vw;
+  height: 100vh;
+}
+
+.header-wallet {
+  align-self: center;
+  width: 1037px;
+  height: 210px;
+  
+  background: #FFFFFF;
+  box-shadow: -4px 9px 13px rgba(5, 18, 54, 0.4);
+  border-radius: 10px;
+}
+
+.main-wallet {
+  display: flex;
+  flex-direction: column;
+}
+
+.margim-2rem {
+  margin: 1rem;
+}

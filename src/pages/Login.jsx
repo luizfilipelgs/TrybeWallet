@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { saveEmailAction } from '../redux/actions';
+import '../style/Login.css';
 
 class Login extends React.Component {
   state = {
@@ -39,34 +40,33 @@ class Login extends React.Component {
     const { btnDisabled } = this.state;
     return (
       <main>
-        <h1>Login</h1>
         <form
           onSubmit={ this.handleSubmit }
           id="form-login"
         >
-          <label htmlFor="email-input">
-            Email:
-            <input
-              type="email"
-              name="email"
-              data-testid="email-input"
-              id="email-input"
-              onChange={ this.handleChange }
-            />
-          </label>
-          <label htmlFor="password-input">
-            Senha:
-            <input
-              type="text"
-              name="senha"
-              data-testid="password-input"
-              id="password-input"
-              onChange={ this.handleChange }
-            />
-          </label>
+          <h1 className="title is-1">Login</h1>
+          <input
+            type="email"
+            name="email"
+            className="input"
+            placeholder="Email"
+            data-testid="email-input"
+            /* id="email-input" */
+            onChange={ this.handleChange }
+          />
+          <input
+            type="password"
+            className="input"
+            placeholder="Password"
+            name="senha"
+            data-testid="password-input"
+            /* id="password-input" */
+            onChange={ this.handleChange }
+          />
           <button
             type="submit"
             disabled={ btnDisabled }
+            className="button is-success"
           >
             Entrar
           </button>

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.title-wallet {
+  width: 200px; 
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.flex {
+  display: flex;
+}
+
+span {
+  margin: 4px;
+}

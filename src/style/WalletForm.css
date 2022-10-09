@@ -1,0 +1,13 @@
+#form-wallet {
+  display: flex;
+  flex-wrap: wrap;
+  height: 6rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#value-input {
+  width: 12.5rem;
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { currenciesThunk, ExpenseSumAction } from '../redux/actions';
+import '../style/WalletForm.css';
 
 class WalletForm extends Component {
   state = {
@@ -57,19 +58,19 @@ class WalletForm extends Component {
       <form
         id="form-wallet"
       >
-        <label htmlFor="value-input">
-          Valor:
-          <input
-            type="number"
-            name="value"
-            value={ value }
-            id="value-input"
-            data-testid="value-input"
-            onChange={ this.handleChange }
-          />
-        </label>
-        <label htmlFor="currency-input">
-          Moeda:
+
+        <input
+          type="number"
+          className="input is-small"
+          placeholder="Valor"
+          name="value"
+          value={ value }
+          id="value-input"
+          data-testid="value-input"
+          onChange={ this.handleChange }
+        />
+
+        <label htmlFor="currency-input" className="select is-small margim-2rem">
           <select
             name="currency"
             value={ currency }
@@ -84,8 +85,7 @@ class WalletForm extends Component {
             }
           </select>
         </label>
-        <label htmlFor="method-input">
-          Método de Pagamento:
+        <label htmlFor="method-input" className="select is-small">
           <select
             name="method"
             value={ method }
@@ -100,8 +100,7 @@ class WalletForm extends Component {
             }
           </select>
         </label>
-        <label htmlFor="tag-input">
-          Categoria:
+        <label htmlFor="tag-input" className="select is-small margim-2rem">
           <select
             name="tag"
             value={ tag }
@@ -117,9 +116,10 @@ class WalletForm extends Component {
           </select>
         </label>
         <label htmlFor="description-input">
-          Descrição:
           <input
             type="text"
+            className="input is-small"
+            placeholder="Descrição"
             name="description"
             value={ description }
             id="description-input"
@@ -129,6 +129,7 @@ class WalletForm extends Component {
         </label>
         <button
           type="button"
+          className="button is-success is-small margim-2rem"
           onClick={ this.handleSubmit }
         >
           Adicionar despesa
