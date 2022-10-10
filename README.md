@@ -1,5 +1,13 @@
 # Boas-vindas ao repositório do projeto Trybewallet!
 
+<div align="center">
+  <img align="center" src = "TrybeWallet.gif" width=800 />
+ </div>
+<br/>
+<br/>
+
+#### Link Deploy: https://luizfilipelgs.github.io/TrybeWallet/
+
 ## O que foi desenvolvido
 Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor de moedas, ao utilizar essa aplicação um usuário deverá ser capaz de:
 
